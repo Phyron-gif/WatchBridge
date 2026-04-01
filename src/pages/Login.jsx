@@ -21,7 +21,7 @@ function Login(){
         
         setState('signup')
         
-        navigate('/')
+        navigate('/opportunities')
         
     }
     return(

@@ -12,9 +12,10 @@ function Home() {
     const {user} = useContext(AuthContext)
   return (
     <>
-    <section className="bg-gradient-to-r from-blue-600 to-blue-200 py-20 md:py-32">
-        <div className="max-w-6xl mx-auto px-6">
-        <h1 className="text-3xl text-center md:text-left md:text-4xl text-green-800">Hello, {user.name}</h1>
+    
+    <section className="bg-gradient-to-r from-blue-600 to-blue-200 py-20 md:py-32 overflow-hidden">
+        <div className="max-w-6xl mx-auto px-6 ">
+        <h1 className="text-3xl text-center md:text-left md:text-4xl text-green-800 font-normal">Hello, {user.name}</h1>
         </div>
     
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -39,14 +40,16 @@ function Home() {
 
       </div>
     </section>
-    <div className="bg-slate-300 flex items-center justify-center py-20 md:py-32">
+    <div className="bg-slate-300  py-20 md:py-32">
        
-        <div>
+        <div className="max-w-6xl mx-auto px-6">
             <HeroCard/>
         </div>
     </div>
-     <div className="bg-slate-100 flex items-center justify-center py-20 md:py-32">
+     <div className="bg-slate-100  py-20 md:py-32">
+        <div className="max-w-6xl mx-auto px-6">
        <HeroStats/>
+       </div>
 
      </div>
      

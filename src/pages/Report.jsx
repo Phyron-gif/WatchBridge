@@ -1,3 +1,4 @@
+import Card from "../components/report/Card"
 import Input from "../components/report/Input"
 import Text from "../components/report/Text"
 
@@ -13,6 +14,12 @@ function Report(){
                 <div className="px-8">
                     <Input/>
                 </div>
+                 <div className="px-8 flex gap-4">
+                    <Card/>
+            
+                </div>
+
+
 
 
 
